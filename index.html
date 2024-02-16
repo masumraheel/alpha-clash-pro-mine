@@ -15,16 +15,24 @@
 </head>
 <body class="font-poppins">
    <main class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center">
-    <!-- Home screen -->
-    <section class="home text-white flex justify-center items-center min-h-screen hidden">
+    <!-- Home screen start -->
+    <section id="home-screen" class=" text-white flex justify-center items-center min-h-screen">
         <div class="flex flex-col items-center gap-6">
-            <h1 class="text-8xl font-anton ">ALPHABET CLASH PRO</h1>
-            <p class="">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-            <button class="btn text-black">Play Now</button>
+            <h1 class="text-8xl font-anton ">
+                ALPHABET CLASH PRO
+            </h1>
+            <p class="">
+                Unleash Your Keyboard Kung Fu : Press “Enter” to Play
+            </p>
+            <button onclick="play()" class="btn text-black">
+                Play Now
+            </button>
         </div>
     </section>
+    <!-- Home screen end -->
+
     <!-- Play Ground -->
-    <section class="playground hidden">
+    <section id="play-ground" class="hidden">
         <div class=" flex flex-col justify-center items-center gap-20 pt-28">
             <!-- screen start -->
             <div class="artboard artboard-horizontal phone-6 border-[20px] border-[#010313CC] bg-[hsla(0,0%,100%,1)] rounded-3xl">
@@ -95,7 +103,9 @@
         </div>
     </section>
     <!-- Play Ground End -->
-    <section class="score flex justify-center items-center min-h-screen">
+
+    <!-- final score start -->
+    <section class="score flex justify-center items-center min-h-screen hidden">
         <div class="text-white text-center space-y-8 bg-[#FFFFFF33] rounded-2xl p-6">
             <h1 class="text-8xl">
                 <span class="font-extrabold">Score:</span>
@@ -105,6 +115,8 @@
             <p>Practice will make you Pro</p>
         </div>
     </section>
+    <!-- final score end -->
    </main>
+   <script src="script/alpha_clash.js"></script>
 </body>
 </html>
