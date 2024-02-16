@@ -9,9 +9,15 @@
 //     playgroundSection.classList.remove('hidden')
 //     // console.log(playgroundSection.classList);
 // }
+function continueGame(){
+    const alphabet= getARandomAlphabet();
+    console.log(alphabet);
+}
+
 
 function play(){
-    hideElementById("home-screen")
-    showElementById("play-ground")
+    hideElementById("home-screen");
+    showElementById("play-ground");
+    continueGame()
 }
 
