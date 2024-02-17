@@ -12,6 +12,11 @@
 function continueGame(){
     const alphabet= getARandomAlphabet();
     console.log(alphabet);
+
+    const currentAlphabetElement=document.getElementById('currentAlphabet');
+    currentAlphabetElement.innerText= alphabet;
+
+    setBackgroundColorById(alphabet);
 }
 
 
@@ -19,5 +24,6 @@ function play(){
     hideElementById("home-screen");
     showElementById("play-ground");
     continueGame()
+  
 }
 
